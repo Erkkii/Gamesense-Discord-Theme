@@ -1,0 +1,224 @@
+/**
+ * @name DiscordSense
+ * @version 1.0
+ * @description A gamesense Theme for Discord, meant to be used with Discord Dark Mode.
+ * @author Joxan#9241, rat#0854
+*/
+
+:root {
+    --title-gradient: linear-gradient(to right, #37b1da, #c948cd, #cce335, #37b1da);
+    --primary-color: #75a00d;
+    --outline-lightcolor: #3c3c3c;
+    --app-color: #242424;
+    --color-brand: #111C2F;
+    --color-brand-darker: #0c1420;
+    --background-primary: #1b1b1b;
+    --background-secondary: #212121;
+    --background-empty: #151515;
+    --border-primary: #3c3c3c;
+    --background-tertiary: rgba(38, 38, 38, 0.5);  
+    --selection-text: #ffffff; 
+    --animation: gradient-border 3s linear infinite;
+    --background-size: 400% 100%;
+}
+/* Modify windows box */
+.typeWindows-2-g3UY {
+     height: 25px;
+     background: var(--primary-color);
+     margin-top: -0.5px!important;
+     margin-left: 1px;
+     margin-right: 1px;
+     background: var(--title-gradient);
+     box-shadow: inset 0 -23px 0 0 var(--app-color),inset 0 -24px 0 0 rgba(0,0,0,0.5);
+     opacity: 1.0;
+     z-index: 50;
+     border-bottom: 1px solid var(--outline-lightcolor);
+}
+.wordmark-2u86JB::before{
+     content: 'discord';
+     font-size: 14px;
+     z-index: 1000;
+     position: fixed;
+     display: inline-block;
+     color: var(--text-color);
+     height: auto;
+     top: 12px;
+     left: 12px;
+     background-color: transparent;
+}
+.wordmark-2u86JB::after{
+     content: '.cc';
+     font-size: 14px;
+     z-index: 1000;
+     position: fixed;
+     display: inline-block;
+     color: var(--primary-color);
+     height: auto;
+     top: 12px;
+     left: 57px;
+     background-color: transparent;
+}
+.winButtonClose-3Q8ZH5 {
+     height: 34px;
+}
+.winButtonClose-3Q8ZH5:hover {
+     background-color: transparent;
+}
+.winButtonMinMax-3RsPUg {
+     height: 34px;
+}
+.winButtonMinMax-3RsPUg:hover {
+     background-color: transparent;
+}
+.wordmark-2u86JB svg {
+     display: none;
+}
+.typeWindows-2-g3UY {
+     animation: rgbTop 3s infinite linear;
+}
+/* Animations */
+@keyframes gradient-border {
+     0%, 200% {
+         background-position: 0 0;
+    }
+     99.999999999999999% {
+         background-position: 130% 0;
+    }
+}
+@keyframes rgbTop {
+    0% {
+        background-position: 1920px;
+    }
+    100% {
+        background-position: 0px;
+    }
+}
+/* Main body div */
+.appMount-2yBXZl {
+     left: 6px;
+     top: 6px;
+     height: calc(100vh - 12px);
+     width: calc(100vw - 12px);
+     box-shadow: 0 0 0 1px #3c3c3c, 0 0 0 4px #282828, 0 0 0 5px #3c3c3c, 0 0 0 6px #0a0a0a;
+     background-color: var(--channels-color);
+}
+/* Empty space */
+.container-1eFtFS {
+     background-color: var(--background-empty);
+}
+/* Sidebar */
+.sidebar-1tnWFu {
+     margin: 10px;
+     background-color: var(--background-empty);
+}
+/* Inside sidebar */
+.wrapper-1_HaEi.guilds-2JjMmN {
+     background-color: var(--background-primary);
+     border-right: 1px solid var(--border-primary);
+     margin-right: 10px;
+}
+.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4 {
+     background-color: var(--background-primary);
+}
+/* Server & private channels */
+.container-1NXEtd, .privateChannels-oVe7HL{
+     background-color: var(--background-primary);
+     margin-bottom: 10px;
+     border: 1px solid var(--border-primary);
+     border-radius: 5px;
+}
+.header-3OsQeK,
+.scroller-WSmht3.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG, 
+.scroller-1ox3I2.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG.customTheme-3QAYZq {
+     background-color: var(--background-primary);
+}
+/* User area */
+.panels-3wFtMD {
+     margin-top: 10px;
+     background-color: var(--background-primary);
+     border: 1px solid var(--border-primary);
+     border-radius: 5px;
+}
+.theme-dark .container-YkUktl {
+     background-color: var(--background-primary);
+}
+/* Voice area */
+.wrapper-3Hk9OB, .container-1zzFcN {
+     background-color: var(--background-primary);
+}
+.button-1EGGcP.buttonColor-3bP3fX.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeSmall-3R2P2p.fullWidth-3M-YBR.grow-2T4nbg.button-1EGGcP,
+.button-1EGGcP.buttonColor-3bP3fX.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeSmall-3R2P2p.grow-2T4nbg.button-1EGGcP {
+     background-color: var(--background-secondary);
+}
+/* Activity area */
+.panel-2ZFCRb.activityPanel-9icbyU {
+     background-color: var(--background-primary);
+}
+/* Chat area */
+.chat-2ZfjoI {
+     margin: 10px;
+     background-color: var(--background-primary);
+     border: 1px solid var(--border-primary);
+     border-radius: 5px;
+}
+/* Forum area */
+.container-3wLKDe {
+     background-color: var(--background-primary);
+}
+/* Channel title */
+.title-31SJ6t.forumOrHome-2VTX6r.container-ZMc96U.themed-Hp1KC_ {
+     background-color: var(--background-primary);
+}
+/* Member list */
+.container-2o3qEW {
+     background-color: var(--background-primary);
+     border-left: 1px solid var(--border-primary);
+     border-top: 1px solid var(--border-primary);
+}
+.members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG.customTheme-3QAYZq {
+     background-color: var(--background-primary);
+}
+.layout-1qmrhw {
+     background-color: var(--background-primary);
+}
+.members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG {
+     background-color: var(--background-primary);
+}
+/* Profile panel */
+.none-1rXy4P.scrollerBase-1Pkza4 {
+     background-color: #1b1b1b;
+     border-left: 1px solid var(--border-primary);
+     border-top: 1px solid var(--border-primary);
+}
+/* Friends box */
+.container-2cd8Mz {
+     background-color: var(--background-primary);
+     border: 1px solid var(--border-primary);
+     border-radius: 5px;
+     margin: 10px;
+}
+/* Friends header */
+.theme-dark.container-ZMc96U.themed-Hp1KC_ {
+     background-color: #1b1b1b;
+     border-bottom: 1px solid var(--border-primary);
+}
+/* Private chat header */
+.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ {
+     border-bottom: 1px solid var(--border-primary);
+}
+/* Search */
+.search-39IXmY {
+     background-color: #000000;
+}
+/* White shit after selecting server */
+.pill-2RsI5Q.wrapper-z5ab_q {
+     
+}
+/* Selected server from list */
+.listItem-3SmSlK .wrapper-3kah-n.selected-1Drb7Z {
+     
+}
+/* Send messages box */
+.scrollableContainer-15eg7h {
+    background-color: rgb(38, 38, 38);
+}
